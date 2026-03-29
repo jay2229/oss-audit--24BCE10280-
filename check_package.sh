@@ -1,9 +1,9 @@
 #!/bin/bash
 
-# --- Set the package name to check ---
+#Set the package name to check 
 PACKAGE="python3"
 
-# --- CHECK if the package is installed ---
+# Check if the package is installed
 if command -v python3 &>/dev/null; then
     echo "$PACKAGE is installed!"
     # Show version, license and summary
@@ -12,7 +12,7 @@ else
     echo "$PACKAGE is NOT installed."
 fi
 
-# --- Philosophy note based on package name ---
+#  Philosophy note based on package name 
 case $PACKAGE in
     python3)  echo "Python: a language built by community, for everyone" ;;
     httpd)    echo "Apache: the web server that built the open internet" ;;
